@@ -1,0 +1,313 @@
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef9ef;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #ff7b54, #e63946);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+  }
+
+  /* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;  /* Make sure the navbar has a relative position for dropdown */
+    width: 100vw;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 230px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffe4b5;
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    background-color: #f8b400;
+    border-radius: 5px;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    z-index: 10; /* Ensure the dropdown is above other elements */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin: 0.5rem 0;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 0.3rem 0;
+    display: block;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/filipino-food-banner.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    position: relative;
+    height: 400px;
+    background-image: url(./images/filipino-food.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    top: 125px;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    background: #e63946;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #ff7b54;
+  }
+  
+  /* Food Sections */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .food {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .food:hover {
+    transform: translateY(-5px);
+  }
+  
+  .food h2 {
+    color: #e63946;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .food img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .food p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    height: 100px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .food h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+
+  /* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Recipe Button */
+  .recipe-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background: #e63946;
+    color: #fff;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;display: flex;
+    align-items: center;  /* Vertically aligns the content */
+    justify-content: center;  /* Horizontally aligns content (optional) */
+  }
+  
+  .recipe-btn:hover {
+    background: #ff7b54;
+  }
+  

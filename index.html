@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodelicacy - Filipino Food Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/restaurant.png" alt="" height="40">
+        <h1>Foodelicacy</h1>
+      </div>
+      <ul class="nav-links">
+        <!-- Dropdown for Foodies -->
+        <li class="dropdown">
+          <a href="#">Foodies</a>
+          <ul class="dropdown-menu">
+            <li><a href="#adobo">Adobo</a></li>
+            <li><a href="#sinigang">Sinigang</a></li>
+            <li><a href="#lechon">Lechon</a></li>
+            <li><a href="#kare-kare">Kare-Kare</a></li>
+            <li><a href="#halo-halo">Halo-Halo</a></li>
+            <li><a href="#pancit">Pancit</a></li>
+            <li><a href="#bibingka">Bibingka</a></li>
+            <li><a href="#turon">Turon</a></li>
+          </ul>
+        </li>
+  
+        <!-- Links for Contact and About Us -->
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Experience the Taste of the Philippines</h2>
+      <p>From savory dishes to sweet treats, explore the rich culture and flavors of Filipino cuisine.</p>
+      <a href="#adobo" class="cta-btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Adobo -->
+    <section class="food" id="adobo">
+      <h2>Adobo</h2>
+      <img src="images/adobo.jpg" alt="Adobo">
+      <p>A savory stew made with meat, vinegar, soy sauce, garlic, and spices. A timeless classic loved by all Filipinos.</p>
+      <p>Adobo is a classic Filipino dish made with either chicken or pork marinated in a savory mixture of soy sauce, vinegar, garlic, and spices. The meat is simmered until tender, creating a flavorful and aromatic stew that is a staple in Filipino households.</p>
+      <button class="recipe-btn" onclick="showRecipe('adobo-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Sinigang -->
+    <section class="food" id="sinigang">
+      <h2>Sinigang</h2>
+      <img src="images/sinigang.jpg" alt="Sinigang">
+      <p>A comforting soup known for its sour and savory flavors, often made with tamarind and fresh vegetables.</p>
+      <p>Sinigang is a comforting Filipino soup known for its sour, savory, and refreshing flavor. Typically made with pork or shrimp, the dish features tamarind as the base for its tangy broth, complemented by vegetables like kangkong (water spinach), radish, and eggplant.</p>
+      <button class="recipe-btn" onclick="showRecipe('sinigang-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Lechon -->
+    <section class="food" id="lechon">
+      <h2>Lechon</h2>
+      <img src="images/lechon.jpg" alt="Lechon">
+      <p>Whole roasted pig with crispy skin and tender meat, perfect for celebrations and fiestas.</p>
+      <p>Lechon is a beloved Filipino delicacy that consists of a whole roasted pig, seasoned with a mix of spices, and cooked until the skin is perfectly crispy. It’s often served at major celebrations like fiestas and family gatherings, where it’s the centerpiece of the feast.</p>
+      <button class="recipe-btn" onclick="showRecipe('lechon-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Kare-Kare -->
+    <section class="food" id="kare-kare">
+      <h2>Kare-Kare</h2>
+      <img src="images/kare-kare.jpeg" alt="Kare-Kare">
+      <p>A rich peanut-based stew with oxtail, vegetables, and shrimp paste on the side.</p>
+      <p>Kare-Kare is a rich and creamy peanut-based stew that traditionally includes oxtail, tripes, and a variety of vegetables such as eggplant, banana heart, and string beans. It’s typically served with bagoong (fermented shrimp paste) on the side to add a savory kick to the dish.</p>
+      <button class="recipe-btn" onclick="showRecipe('kare-kare-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Halo-Halo -->
+    <section class="food" id="halo-halo">
+      <h2>Halo-Halo</h2>
+      <img src="images/halo-halo.jpg" alt="Halo-Halo">
+      <p>A refreshing dessert of shaved ice, sweetened beans, jellies, fruits, and a scoop of ube ice cream.</p>
+      <p>Halo-Halo is a refreshing Filipino dessert, especially popular during the hot summer months. It’s made by layering shaved ice with sweetened fruits, jellies, beans, and leche flan, and topped with a scoop of ube (purple yam) ice cream for a delightful mix of textures and flavors.</p>
+      <button class="recipe-btn" onclick="showRecipe('halo-halo-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Pancit -->
+    <section class="food" id="pancit">
+      <h2>Pancit</h2>
+      <img src="images/pancit.jpg" alt="Pancit">
+      <p>Stir-fried noodles with a mix of vegetables, meat, and seafood. A symbol of long life and prosperity.</p>
+      <p>Pancit is the general term for Filipino noodle dishes, with each region offering its own variation. A common type is Pancit Canton, which features stir-fried egg noodles with a combination of vegetables, meat, and seafood. Pancit is often served during celebrations to symbolize long life and good fortune.
+
+      </p>
+      <button class="recipe-btn" onclick="showRecipe('pancit-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Bibingka -->
+    <section class="food" id="bibingka">
+      <h2>Bibingka</h2>
+      <img src="images/bibingka.jpg" alt="Bibingka">
+      <p>A traditional rice cake baked in banana leaves, topped with salted egg and cheese.</p>
+      <p>Bibingka is a traditional Filipino rice cake made from rice flour and coconut milk, then baked in banana leaves. It’s often topped with salted egg and cheese, giving it a perfect balance of savory and sweet flavors. Bibingka is a popular treat during the Christmas season.</p>
+      <button class="recipe-btn" onclick="showRecipe('bibingka-recipe')">See Recipe</button>
+    </section>
+
+    <!-- Turon -->
+    <section class="food" id="turon">
+      <h2>Turon</h2>
+      <img src="images/turon.jpg" alt="Turon">
+      <p>Sweet and crunchy banana spring rolls coated with caramelized sugar. A delightful snack!</p>
+      <p>Turon is a popular Filipino snack made by wrapping sweet bananas (usually saba bananas) and jackfruit in spring roll wrappers, then frying them until crispy and caramelized. This simple yet satisfying snack is often served as a street food delight.
+
+        These descriptions add more context to the dishes, highlighting their flavors and cultural significance.</p>
+      <button class="recipe-btn" onclick="showRecipe('turon-recipe')">See Recipe</button>
+    </section>
+  </main>
+
+  <!-- Recipe Modals -->
+  <div class="modal" id="adobo-recipe">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeRecipe('adobo-recipe')">&times;</span>
+      <h3>Adobo Recipe</h3>
+      <p>Ingredients: Chicken or pork, vinegar, soy sauce, garlic, bay leaves, peppercorns.</p>
+      <p>Instructions: Combine ingredients, marinate, then simmer until tender.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="sinigang-recipe">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeRecipe('sinigang-recipe')">&times;</span>
+      <h3>Sinigang Recipe</h3>
+      <p>Ingredients: Tamarind, pork, water spinach, radish, eggplant, okra, fish sauce.</p>
+      <p>Instructions: Boil pork, add tamarind and vegetables, season to taste.</p>
+    </div>
+  </div>
+
+  <!-- Add modals for other recipes in the same format -->
+  <div class="modal" id="lechon-recipe">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeRecipe('lechon-recipe')">&times;</span>
+      <h3>Lechon Recipe</h3>
+      <p>Ingredients: Whole pig, marinade (garlic, soy sauce, and spices).</p>
+      <p>Instructions: Stuff the pig, marinate overnight, and roast over charcoal.</p>
+    </div>
+  </div>
+  <!-- Repeat modal structure for Kare-Kare, Halo-Halo, Pancit, Bibingka, and Turon -->
+
+ <!-- Footer with Social Media Links -->
+<footer>
+    <div class="footer-content">
+      <p>© 2024 Pinoy Flavors. All Rights Reserved.</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+          <img src="images/facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+          <img src="images/instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+          <img src="images/twitter-icon.png" alt="Twitter">
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="social-icon">
+          <img src="images/youtube-icon.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Add Styles for Footer -->
+  <style>
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .footer-content p {
+      margin: 0;
+    }
+    .social-media {
+      display: flex;
+      gap: 20px;
+    }
+    .social-icon img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+    .social-icon img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  
+
+  <script>
+    // Show Recipe Modal
+function showRecipe(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.style.display = "block";
+}
+
+// Close Recipe Modal
+function closeRecipe(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.style.display = "none";
+}
+
+// Close modal if clicked outside content
+window.onclick = function (event) {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+};
+  </script>
+</body>
+</html>
